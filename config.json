@@ -1,0 +1,21 @@
+{
+    "external_endpoint": "google.com",
+    "data_receive_port": 8000,
+    "time_interval": 5,
+    "last_received_location": {
+        "id": "132456789012345",
+        "timestamp": 1708358351,
+        "lat": 48.85789825,
+        "lon": 2.34203025,
+        "altitude": 50,
+        "bearing": 209.8520167391731,
+        "speed": 40,
+        "battery": 4,
+        "alarm": null,
+        "ignition": true,
+        "accuracy": 0,
+        "rpm": 1843,
+        "fuel": 62,
+        "driverUniqueId": false
+    }
+}

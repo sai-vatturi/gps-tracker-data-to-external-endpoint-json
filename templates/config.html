@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Configuration</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Update Configuration</h1>
+    <form id="configForm">
+        <label for="endpoint">External Endpoint:</label><br>
+        <input type="text" id="endpoint" name="endpoint" placeholder="Enter endpoint">
+        <label for="interval">Time Interval (seconds):</label><br>
+        <input type="number" id="interval" name="interval" placeholder="Enter interval">
+        <input type="submit" value="Update">
+    </form>
+
+    <h2>Server Public IP</h2>
+    <button id="getIPButton">Get Public IP</button>
+    <p id="publicIP"></p>
+
+    <!-- New section for displaying the last received location -->
+    <h2>Last Received Location</h2>
+<!-- In your config.html template -->
+<div id="lastLocation" style="white-space: pre-wrap;">{{ last_location|safe }}</div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
